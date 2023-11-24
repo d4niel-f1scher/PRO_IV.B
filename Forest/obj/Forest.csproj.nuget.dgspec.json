@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj": {}
+    "c:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj": {
+    "c:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj",
+        "projectUniqueName": "c:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj",
         "projectName": "Forest",
-        "projectPath": "C:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj",
+        "projectPath": "c:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\Forest.csproj",
         "packagesPath": "C:\\Users\\42191\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\obj\\",
+        "outputPath": "c:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\42191\\AppData\\Roaming\\NuGet\\NuGet.Config",

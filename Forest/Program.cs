@@ -11,6 +11,8 @@
         int.TryParse(Console.ReadLine(), out pocet_dni);
         les.Rast(pocet_dni);
         les.Info();
+        Console.WriteLine("Hello World!");
+        Console.ReadLine();
     } 
 }
 public class Strom
