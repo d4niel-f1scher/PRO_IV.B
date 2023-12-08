@@ -1,18 +1,17 @@
 ﻿class Program
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
-        int pocet_stromov;
-        int pocet_dni;
-        Console.Write("Zadajte pocet stromov: ");
-        int.TryParse(Console.ReadLine(),out pocet_stromov);
-        Les les = new Les(pocet_stromov);
-        Console.Write("Zadajte pocet dni: ");
-        int.TryParse(Console.ReadLine(), out pocet_dni);
-        les.Rast(pocet_dni);
-        les.Info();
-        Console.WriteLine("Hello World!");
-        Console.ReadLine();
+        // V = 1/3 pi *(r*r)v
+        double radius;
+        double vyska;
+        double objem;
+        Console.WriteLine("Zadaj polomer korena stromu:");
+        double.TryParse(Console.ReadLine(),out radius);
+        Console.WriteLine("Zadaj vysku stromu:");
+        double.TryParse(Console.ReadLine(),out vyska);
+        objem = Math.PI *Math.Pow(radius,2)*vyska * (1.0/3.0) ;
+        Console.WriteLine(objem);
     } 
 }
 public class Strom
