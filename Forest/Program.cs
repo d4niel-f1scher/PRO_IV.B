@@ -11,6 +11,14 @@
         Console.WriteLine("Zadaj vysku stromu:");
         double.TryParse(Console.ReadLine(),out vyska);
         objem = Math.PI *Math.Pow(radius,2)*vyska * (1.0/3.0) ;
+        for (int i = 0;i<4;i++)
+        {
+            Console.WriteLine("Zadaj polomer konaru");
+            double.TryParse(Console.ReadLine(),out radius);
+            Console.WriteLine("Zadaj vysku konaru:");
+            double.TryParse(Console.ReadLine(),out vyska);
+            objem = objem + (Math.PI *Math.Pow(radius,2)*vyska * (1.0/3.0));
+        }
         Console.WriteLine(objem);
     } 
 }
@@ -22,6 +30,7 @@ public class Strom
     public double age; //roky
     public double radius; //metre
     public double height; //metre
+    public double pocet_konarov;
     public void Rastie()
     {
         age+=1/year;
@@ -33,7 +42,9 @@ public class Strom
         age = 0.0;
         radius = 0.0;
         height = 0.0;
+        pocet_konarov = 0;
     }
+    
 }
 public class Les
 {
