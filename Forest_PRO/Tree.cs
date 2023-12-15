@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Forest_projekt
+namespace Forest_PRO
 {
     class Tree
     {
         ~Tree() { }
         public
             double radius, height;
-        public
+        public virtual
             double Volume
         { get { return Math.PI * Math.Pow(radius, 2) * height * 1.0 / 3.0; } }
         public Array kontajner;
