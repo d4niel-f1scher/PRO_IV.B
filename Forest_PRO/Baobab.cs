@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Forest_PRO
 {
-    class Baobab:Leaf_Tree
+    class Baobab:LeafTree
     {
-        public override double Volume { get { return Math.PI * Math.Pow(radius, 2) * height;}}
+        public override
+            double Volume
+        { get { return Math.PI * Math.Pow(radius, 2) * height; } }
         public Baobab() 
         { 
             

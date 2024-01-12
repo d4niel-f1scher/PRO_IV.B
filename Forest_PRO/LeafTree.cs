@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Forest_PRO
 {
-    class Leaf_Tree : Tree
+    class LeafTree : Tree
     {
-        public Leaf_Tree() 
+        public LeafTree() 
         { 
 
         }
-        ~Leaf_Tree() 
+        ~LeafTree() 
         { 
 
         }
-
     }
 }

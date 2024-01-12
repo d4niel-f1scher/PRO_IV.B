@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Forest_PRO
 {
-    class Tree
+    class Tree : IOrganism
     {
+        static 
+            double height_increment = 0.02/365.0,
+            double radius_increment = 0.01/365.0;
         ~Tree() { }
         public
             double radius, height;
@@ -27,6 +30,11 @@ namespace Forest_PRO
             this.height = height;
             this.radius = radius;
             this.pocet_konarov = pocet_konarov;
+        }
+        public void Growing() 
+        {
+            radius = radius + radius_increment;
+            height = height + height_increment;
         }
     }
 }

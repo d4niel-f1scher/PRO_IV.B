@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace Forest_PRO
 {
-    class Pine_Tree:Tree
+    interface IOrganism
     {
-        public Pine_Tree() 
-        {
-        
-        }
-        ~Pine_Tree()
-        {
-        
-        }
+        void Growing();
     }
 }
