@@ -17,11 +17,15 @@ namespace Forest_PRO
         public virtual
             double Volume
             { get { return Math.PI * Math.Pow(radius, 2) * height * 1.0 / 3.0; } }
+        List<Branch> branches; 
         public Tree()
         {
             radius = 0.0;
             height = 0.0;
             pocet_konarov = 0;
+            branches = new List<Branch>();
+            branch1 = new Branch();
+            branches.Add(branch1);
         }
         public Tree(double radius, double height, double pocet_konarov)
         {
