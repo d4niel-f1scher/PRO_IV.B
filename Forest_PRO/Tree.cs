@@ -38,5 +38,22 @@ namespace Forest_PRO
             radius = radius + radius_increment;
             height = height + height_increment;
         }
+        public double vypocitajObjem()
+        {
+                List<double> volumeBranch = new List<double>();
+                double averageVolume = 0.0;
+                for(int i = 0; i< volumeBranch.Count();int++)
+                    averageVolume += volumeBranch[i];
+                try
+                {
+                    averageVolume /= volumeBranch.Count();
+                }
+                catch (DivideByZeroException e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                Console.WriteLine("test riadok 1");
+                Console.WriteLine("test");
+        }
     }
 }
