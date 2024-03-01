@@ -8,32 +8,37 @@ namespace Forest_PRO
 {
     class Tree : IOrganism
     {
+       public bool isDry;
         static 
-            double height_increment = 0.02/365.0,
+            double height_increment = 0.02/365.0;
             double radius_increment = 0.01/365.0;
         ~Tree() { }
         public
             double radius, height;
+        public int pocet_konarov;
         public virtual
             double Volume
             { get { return Math.PI * Math.Pow(radius, 2) * height * 1.0 / 3.0; } }
-        List<Branch> branches; 
+        List<Branch> branches;
+        Dictionary<Branch, BranchPosition> dictBranches;
         public Tree()
         {
             radius = 0.0;
             height = 0.0;
             pocet_konarov = 0;
             branches = new List<Branch>();
-            branch1 = new Branch();
+            Branch branch1 = new Branch();
             branches.Add(branch1);
+            dictBranches = new Dictionary<Branch, BranchPosition>();
+            dictBranches.Add(branch1,  new BranchPosition(1, 1, 1));
         }
-        public Tree(double radius, double height, double pocet_konarov)
+        public Tree(double radius, double height, int pocet_konarov)
         {
             this.height = height;
             this.radius = radius;
             this.pocet_konarov = pocet_konarov;
         }
-        public void Growing() 
+        public void Grow() 
         {
             radius = radius + radius_increment;
             height = height + height_increment;
@@ -42,7 +47,7 @@ namespace Forest_PRO
         {
                 List<double> volumeBranch = new List<double>();
                 double averageVolume = 0.0;
-                for(int i = 0; i< volumeBranch.Count();int++)
+                for(int i = 0; i< volumeBranch.Count();i++)
                     averageVolume += volumeBranch[i];
                 try
                 {
@@ -52,8 +57,7 @@ namespace Forest_PRO
                 {
                     Console.WriteLine(e.Message);
                 }
-                Console.WriteLine("test riadok 1");
-                Console.WriteLine("test");
+            return averageVolume;
         }
     }
 }

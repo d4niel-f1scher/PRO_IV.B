@@ -6,26 +6,15 @@ namespace Forest_PRO
     {
         public static void Main(string[] args)
         {
-            // V = 1/3 pi *(r*r)v
+            Oak oak = new Oak();
+            oak.isDry = true;
             try
             {
-                Tree tree = new Tree();
-                tree.radius = 2;
-                tree.height = 2;
-                tree.Growing();
-
-                LeafTree leaf_tree = new LeafTree();
-                leaf_tree.radius = 2;
-                leaf_tree.height = 2;
-                leaf_tree.Growing();
-
-                PineTree pine_tree = new PineTree();
-                pine_tree.radius = 2;
-                pine_tree.height = 2;
+                oak.Grow();
             }
-            catch (Exception e)
-            { 
-                Console.WriteLine(e.Message); 
+            catch (DryException e) 
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }

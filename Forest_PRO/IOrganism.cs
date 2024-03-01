@@ -8,6 +8,6 @@ namespace Forest_PRO
 {
     interface IOrganism
     {
-        void Growing();
+        void Grow();
     }
 }

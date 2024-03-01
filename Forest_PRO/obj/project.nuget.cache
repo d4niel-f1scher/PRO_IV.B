@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IXIfzl6fJrX5ZK2mbKCEeI2oa2asmezSvWN/vAO3+Ilc/4XyLKkr+cAt1bjTlWKI7eS4mVGPf7etDlJMARxWFg==",
+  "dgSpecHash": "ZTIjN+vt4KxqkNbZHfDqZt6oz0BrMDJiAAsFZFG2ptKQB3kB/i9uuntyh4NtmvTSb5Vdw08QFg8zs0EuRkI/VQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\42191\\OneDrive\\Počítač\\PRO_IV.B\\Forest_PRO\\Forest_PRO.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\42191\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
